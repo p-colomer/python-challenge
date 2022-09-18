@@ -53,6 +53,12 @@ with open(file_txt,"w") as f:
     print("\nAverage change: $" + str(round(total_changes,2)), file = f)
     print("\nGreatest Increase in Profits: " + greatest_increase_date + " ($"+ str(round(greatest_increase))+")", file = f)
     print("\nGreatest Decrease in Profits: " + greatest_decrease_date + " ($" + str(round(greatest_decrease))+")", file = f)
+    print("\nFinancial Analysis \n----------------------------------------")
+    print("\nTotal months: " , monthcount)
+    print("\nTotal: $" +  str(round(net_total)))
+    print("\nAverage change: $" + str(round(total_changes,2)))
+    print("\nGreatest Increase in Profits: " + greatest_increase_date + " ($"+ str(round(greatest_increase))+")")
+    print("\nGreatest Decrease in Profits: " + greatest_decrease_date + " ($" + str(round(greatest_decrease))+")")
 
 
 

@@ -44,10 +44,17 @@ with open(file_txt,"w") as f:
     print("\nElection Results \n----------------------------------------", file = f)
     print("\nTotal Votes: " , votes_count, file = f)
     print("\n----------------------------------------", file = f)
-    #print(votes, file = f)
     for k, v in votes.items():
         print(f"{k:<10} {v[0]: .3%} ({v[1]})", file = f)
     print("\n----------------------------------------", file = f)
     print("\nWinner: " +  winner, file = f)
     print("\n----------------------------------------", file = f)
+    print("\nElection Results \n----------------------------------------")
+    print("\nTotal Votes: " , votes_count)
+    print("\n----------------------------------------")
+    for k, v in votes.items():
+        print(f"{k:<10} {v[0]: .3%} ({v[1]})")
+    print("\n----------------------------------------")
+    print("\nWinner: " +  winner)
+    print("\n----------------------------------------")
     
